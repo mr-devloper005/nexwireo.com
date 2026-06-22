@@ -1,23 +1,23 @@
 import type { CSSProperties } from 'react'
 
 export const editableRootStyle = {
-  '--slot4-page-bg': '#f7f4ef',
-  '--slot4-page-text': '#111111',
-  '--slot4-panel-bg': '#efeae3',
-  '--slot4-surface-bg': '#fffdfa',
-  '--slot4-muted-text': '#514e49',
-  '--slot4-soft-muted-text': '#77716a',
-  '--slot4-accent': '#c92f2f',
-  '--slot4-accent-fill': '#c92f2f',
-  '--slot4-accent-soft': '#f3d8d3',
-  '--slot4-dark-bg': '#111111',
+  '--slot4-page-bg': '#f6faf3',
+  '--slot4-page-text': '#142112',
+  '--slot4-panel-bg': '#eef6e9',
+  '--slot4-surface-bg': '#ffffff',
+  '--slot4-muted-text': '#526052',
+  '--slot4-soft-muted-text': '#8a9689',
+  '--slot4-accent': '#79c84a',
+  '--slot4-accent-fill': '#79c84a',
+  '--slot4-accent-soft': '#dff2d2',
+  '--slot4-dark-bg': '#071406',
   '--slot4-dark-text': '#ffffff',
-  '--slot4-media-bg': '#e4e0da',
-  '--slot4-cream': '#f7f4ef',
-  '--slot4-warm': '#fffdfa',
-  '--slot4-lavender': '#c92f2f',
-  '--slot4-gray': '#ece9e4',
-  '--slot4-body-gradient': 'linear-gradient(180deg, #f7f4ef 0%, #fffdfa 52%, #eeeae4 100%)',
+  '--slot4-media-bg': '#e7f0e2',
+  '--slot4-cream': '#f6faf3',
+  '--slot4-warm': '#ffffff',
+  '--slot4-lavender': '#79c84a',
+  '--slot4-gray': '#edf3e9',
+  '--slot4-body-gradient': 'linear-gradient(180deg, #ffffff 0%, #f6faf3 52%, #ecf6e8 100%)',
 } as CSSProperties
 
 export const editablePalette = {
@@ -50,8 +50,8 @@ export const editablePalette = {
 export const editableDesignContract = {
   shell: {
     page: `min-h-screen ${editablePalette.pageBg} ${editablePalette.pageText}`,
-    section: 'mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-10',
-    sectionY: 'py-12 sm:py-16 lg:py-20',
+    section: 'mx-auto w-full max-w-[1180px] px-4 sm:px-6 lg:px-8',
+    sectionY: 'py-14 sm:py-18 lg:py-24',
   },
   layout: {
     safeGrid: 'grid gap-px bg-black/15 md:grid-cols-2 xl:grid-cols-3',
@@ -61,8 +61,8 @@ export const editableDesignContract = {
   },
   type: {
     eyebrow: 'text-[11px] font-black uppercase tracking-[0.2em]',
-    heroTitle: 'text-4xl font-black leading-[0.94] tracking-[-0.055em] sm:text-6xl lg:text-[5.4rem]',
-    sectionTitle: 'text-3xl font-black leading-none tracking-[-0.045em] sm:text-4xl',
+    heroTitle: 'text-4xl font-black leading-[1.02] tracking-normal sm:text-6xl lg:text-[4.8rem]',
+    sectionTitle: 'text-3xl font-black leading-tight tracking-normal sm:text-4xl',
     body: 'text-base leading-8',
   },
   surface: {
@@ -71,16 +71,16 @@ export const editableDesignContract = {
     dark: `${editablePalette.darkBg} ${editablePalette.darkText}`,
   },
   button: {
-    primary: `inline-flex items-center justify-center gap-2 bg-[var(--slot4-dark-bg)] px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-white transition hover:bg-[var(--slot4-accent-fill)]`,
-    secondary: `inline-flex items-center justify-center gap-2 border border-black/30 bg-transparent px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-black transition hover:bg-black hover:text-white`,
-    accent: `inline-flex items-center justify-center gap-2 bg-[var(--slot4-accent-fill)] px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-white transition hover:bg-black`,
+    primary: `inline-flex items-center justify-center gap-2 rounded-full bg-[var(--slot4-dark-bg)] px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-white transition hover:bg-[var(--slot4-accent-fill)] hover:text-[var(--slot4-dark-bg)]`,
+    secondary: `inline-flex items-center justify-center gap-2 rounded-full border border-black/20 bg-transparent px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-black transition hover:border-[var(--slot4-accent-fill)] hover:bg-[var(--slot4-accent-fill)] hover:text-[var(--slot4-dark-bg)]`,
+    accent: `inline-flex items-center justify-center gap-2 rounded-full bg-[var(--slot4-accent-fill)] px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-[var(--slot4-dark-bg)] transition hover:bg-[var(--slot4-dark-bg)] hover:text-white`,
   },
   media: {
     frame: `relative overflow-hidden ${editablePalette.mediaBg}`,
     ratio: 'aspect-[4/3]',
   },
   motion: {
-    lift: 'transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_48px_rgba(17,17,17,0.14)]',
+    lift: 'motion-reveal transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_48px_rgba(17,17,17,0.14)]',
     fade: 'transition duration-300 hover:opacity-75',
   },
 } as const

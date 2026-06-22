@@ -15,11 +15,11 @@ export const visualPresets = {
     mood: 'calm magazine authority',
     fontDirection: 'serif headlines with quiet sans body',
     colors: {
-      background: '#f7f4ef',
+      background: '#f6faf3',
       foreground: '#111111',
       muted: '#66615b',
       primary: '#111111',
-      accent: '#c92f2f',
+      accent: '#79c84a',
       surface: '#ffffff',
     },
     shape: 'sharp newsroom modules with black rules and red feature bands',

@@ -6,6 +6,7 @@ import { editableDesignContract as dc } from '@/editable/layouts/design-contract
 export function EditableSiteShell({ children, className = '' }: { children: ReactNode; className?: string }) {
   return (
     <div className={`${dc.shell.page} flex min-h-screen flex-col ${className}`}>
+      <div className="page-progress" aria-hidden="true" />
       <EditableNavbar />
       <div className="min-h-0 flex-1">{children}</div>
       <EditableFooter />
